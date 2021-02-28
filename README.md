@@ -19,8 +19,9 @@ $ npm install
 * CACHE_TTL_SECONDS_DEFAULT: tiempo en segundos por defecto para la capa de cache.
 * CACHE_MAX_ITEMS: numero de items/keys guardados por cache.
 
-* URL_ENDPOINT_PROXY_OBTENER_COMUNAS: url que permite obtneer los pasos de los conceptos
-* URL_ENDPOINT_PROXY_OBTENER_FARMACIAS_TURNO_POR_REGION: url que permite obtneer los tipos de los conceptos
+* REGION_ID: region de busqueda, en este caso, se filtra solo por la metropolitana
+* URL_ENDPOINT_PROXY_OBTENER_COMUNAS_DE_REGION: url que permite obtener las comunas de la region solicitada
+* URL_ENDPOINT_PROXY_OBTENER_FARMACIAS_TURNO_POR_REGION: url que permite obtneer las farmacias de turno
 
 
 ## Running the app

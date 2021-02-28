@@ -2,6 +2,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { HealthCheckModule } from './modules/health-check/health-check.module';
+import { BffModule } from './modules/bff/bff.module';
 
 const envPath = ['.env'];
 if(process.env.NODE_ENV === 'development'){
@@ -15,7 +16,8 @@ if(process.env.NODE_ENV === 'development'){
       expandVariables: true,
       envFilePath: envPath
     }),
-    HealthCheckModule
+    HealthCheckModule,
+    BffModule
   ]
 })
 export class AppModule {}
